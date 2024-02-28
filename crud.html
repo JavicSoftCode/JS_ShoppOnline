@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- GUARDAR_DATOS.html -->
+
+<!-- SIRVE PARA ENVIAR DATOS A UN SERVIDOR WEB UTILIZANDO EL MÉTODO POST -->
+<!--  ESTA CONFIGURADO PARA ENVIAR DATOS A LA RUTA "/guardar-datos" -->
+<form class="edit-form">
+    <h1>Registrar Trabajador </h1>
+
+    <!-- USAR RUTAS ABSOLUTAS EN LOS ENLACES Y CONFIGURAR LAS RUTAS EN EL SERVER EXPRESS -->
+    <!--   <ul class="horizontal-list">
+           <li><a href="/guardar-datos">R. Trab</a></li>
+           <li><a href="/guardar-datos/Editar_Datos.html">V. Asist</a></li>
+           <li><a href="/guardar-datos/Mostrar_Datos.html">V. Pagos</a></li>
+       </ul> -->
+
+    <div class="contenedor">
+
+        <!--  PARA CAPTURAR LOS DATOS ES FUNDAMENTAL REALIZARLOS CON LA PROPIEDAD
+        --NAME-- DEL INPUT ASI ES LA MANERA CORRECTA DE PODER TENER ESOS DATOS
+        INGRESADOS Y PODER GUARDARLOS EN POSTGRESQL -->
+
+        <div>
+            <label for="ID_CI">&nbsp;<i class="fas fa-id-card"></i>&nbsp;Cédula</label>
+            <input type="text" id="ID_CI" name="DB_CI" placeholder="C.I 01223334444...">
+        </div>
+
+        <div>
+            <label for="ID_NameLastname">&nbsp;<i class="fas fa-user-tie"></i>&nbsp;Trabajador</label>
+            <input type="text" id="ID_NameLastname" name="DB_NameLastname" placeholder="Nombre & Apellido...">
+        </div>
+
+        <div>
+            <label for="ID_Area">&nbsp;<i class="fas fa-briefcase"></i>&nbsp;Area</label>
+            <input type="text" id="ID_Area" name="DB_Area" placeholder="Su desempeño...">
+        </div>
+
+        <div>
+            <label for="ID_ValorDia">&nbsp;<i class="fas fa-dollar-sign"></i>&nbsp;Valor del día</label>
+            <input type="number" id="ID_ValorDia" name="DB_ValorDia" placeholder="Día $...">
+        </div>
+
+        <div>
+            <label for="ID_Cell">&nbsp;<i class="fas fa-mobile-alt"></i>&nbsp;Teléfono</label>
+            <input type="text" id="ID_Cell" name="DB_Cell" placeholder="+593 999999999...">
+        </div>
+
+        <div>
+            <button type="submit" id="ID_Btn_GuardarInformacion">GUARDAR INFORMACIÓN</button>
+        </div>
+
+    </div>
+</form>
+
+<script src="script/js/crud.js"></script>
+</body>
+</html>

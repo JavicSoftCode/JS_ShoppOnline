@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/css/Comida.css">
+    <title>Shopp Annie Comida</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Agregamos esta línea para la adaptación móvil -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body {
+        background-color: #000000;
+        padding: 20px;
+        overflow-y: auto;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .cont {
+        box-shadow: 0 0 20px rgba(248, 201, 0, 0.8);
+        border: 5px solid white;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 50px;
+    }
+
+    nav {
+        font-size: 35px;
+    }
+
+    #a {
+        font-size: 25px;
+    }
+
+    #card {
+        box-shadow: 0 0 20px rgba(248, 201, 0, 0.8);
+        border: 5px solid white;
+        border-start-end-radius: 100px;
+        border-end-start-radius: 100px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    #card1 {
+        box-shadow: 0 0 20px rgba(248, 201, 0, 0.8);
+        border: 5px solid white;
+        border-start-end-radius: 20px;
+        border-end-start-radius: 20px;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+
+    img {
+        box-shadow: 0 0 20px rgba(248, 201, 0, 0.8);
+        border: 5px solid white;
+        border-start-end-radius: 100px;
+        border-end-start-radius: 100px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 530px;
+        height: 300px; /*ancho*/
+    }
+
+    #img1 {
+        width: 530px;
+        height: 300px; /*ancho*/
+        box-shadow: 0 0 20px rgba(248, 201, 0, 0.8);
+        border: 5px solid white;
+        border-start-end-radius: 20px;
+        border-end-start-radius: 20px;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+</style>
+<body>
+<div class="cont">
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Shopp Annie Venta de Comida</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../../index.html">Shopp Annie</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Comida
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a id="a" class="dropdown-item" href="">Postres</a>
+                        <a id="a" class="dropdown-item" href="">Desayunos</a>
+                        <a id="a" class="dropdown-item" href="">Comida Rápida</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Ropa
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a id="a" class="dropdown-item" href="">Top</a>
+                        <a id="a" class="dropdown-item" href="">Short</a>
+                        <a id="a" class="dropdown-item" href="">Blusas</a>
+                        <a id="a" class="dropdown-item" href="">Lencerías</a>
+                        <a id="a" class="dropdown-item" href="">Pantalones</a>
+                        <a id="a" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                           data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Calzado de Mujer
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a id="a" class="dropdown-item" href="">Tacos</a>
+                            <a id="a" class="dropdown-item" href="">Sandalias</a>
+                            <a id="a" class="dropdown-item" href="">Deportivos</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Comprar por pedidos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a id="a" class="dropdown-item" href="">Bajo Pedido</a>
+                        <a id="a" class="dropdown-item" href=""></a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a style="font-size: 35" class="nav-link"
+                       href="https://p3nt4gr4m4.github.io/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="productos" class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-md-6"> <!-- Cambiamos col-md-4 a col-12 para dispositivos móviles -->
+                <div id="card" class="card mb-4">
+                    <img src="/img/IMG_Comida.jpg" class="col-12 col-md-6"  alt="Ordenador 1">
+                    <div class="card-body">
+                        <h2 class="card-title">HP Pro-book 640 G2</h2>
+                        <p class="card-text">Detalle: Procesador core I5 6ª generación, 8 GB de RAM y 256 SSD, óptima,
+                            segunda mano</p>
+                        <p class="card-text">¡Precio: $265 Por tiempo limitado!!</p>
+                        <a href="https://wa.me/+593979640840?text=Me interesa la HP Pro-book 640 G2"
+                           class="btn btn-success btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6"> <!-- Cambiamos col-md-4 a col-12 para dispositivos móviles -->
+                <div id="card1" class="card mb-4">
+                    <img id="img1" src="/img/IMG_Comida.jpg" class="col-12 col-md-6"  alt="Ordenador 2">
+                    <div class="card-body">
+                        <h2 class="card-title">HP Pro-book 440 G3</h2>
+                        <p class="card-text">Detalle: Procesador core I5 de 6ª generación, 8 GB de RAM y 256 GB SSD,
+                            segunda
+                            mano</p>
+                        <p class="card-text">¡Precio: $280 Por tiempo limitado!!</p>
+                        <a href="https://wa.me/+593979640840?text=Me interesa la HP Probook 440 G3"
+                           class="btn btn-success btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6"> <!-- Cambiamos col-md-4 a col-12 para dispositivos móviles -->
+                <div id="card" class="card mb-4">
+                    <img src="/img/IMG_Comida.jpg" class="col-12 col-md-6"  alt="Ordenador 3">
+                    <div class="card-body">
+                        <h2 class="card-title">Dell Latitude 3400</h2>
+                        <p class="card-text">Detalle: Intel Core 8ª generación i5-8265U, 8 GB de RAM, 256 GB de clase
+                            M.2
+                            SSD, segunda mano</p>
+                        <p class="card-text">¡Precio: $375 Por tiempo limitado!!</p>
+                        <a href="https://wa.me/+593979640840?text=Me interesa la Dell Latitude 3400"
+                           class="btn btn-success btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6"> <!-- Cambiamos col-md-4 a col-12 para dispositivos móviles -->
+                <div id="card1" class="card mb-4">
+                    <img id="img1" src="/img/IMG_Comida.jpg" class="col-12 col-md-6"  alt="Ordenador 4">
+                    <div class="card-body">
+                        <h2 class="card-title">Hp Probook 450 G4</h2>
+                        <p class="card-text">Detalle: Intel Core 8ª generación i5, 8 GB de RAM, 256 GB de clase M.2 SSD,
+                            segunda mano</p>
+                        <p class="card-text">¡Precio: $375 Por tiempo limitado!!</p>
+                        <a href="https://wa.me/+593979640840?text=Me interesa la Hp Probook 450 G4"
+                           class="btn btn-success btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Puedes agregar más ordenadores aquí -->
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        &copy; JavicSistem 2024
+    </footer>
+</div>
+</body>
+</html>
+
+
+
